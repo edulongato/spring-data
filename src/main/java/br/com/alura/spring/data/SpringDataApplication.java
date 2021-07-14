@@ -1,6 +1,6 @@
 package br.com.alura.spring.data;
 
-import br.com.alura.spring.data.service.CrudeCargoService;
+import br.com.alura.spring.data.service.CrudCargoService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,11 +10,11 @@ import java.util.Scanner;
 @SpringBootApplication
 public class SpringDataApplication implements CommandLineRunner {
 
-    private final CrudeCargoService cargoService;
+    private final CrudCargoService cargoService;
 
     private Boolean system = true;
 
-    public SpringDataApplication(CrudeCargoService cargoService) {
+    public SpringDataApplication(CrudCargoService cargoService) {
         this.cargoService = cargoService;
 
     }

@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 import java.util.Scanner;
 
 @Service
-public class CrudeCargoService {
+public class CrudCargoService {
     private Boolean system = true;
 
     private final CargoRepository cargoRepository;
 
-    public CrudeCargoService(CargoRepository cargoRepository) {
+    public CrudCargoService(CargoRepository cargoRepository) {
         this.cargoRepository = cargoRepository;
     }
 
@@ -78,7 +78,7 @@ public class CrudeCargoService {
         cargo.setId(id);
         cargo.setDescricao(descricao);
         cargoRepository.save(cargo);
-        System.out.println("Salvo");
+        System.out.println("Atualizado");
 
     }
 
