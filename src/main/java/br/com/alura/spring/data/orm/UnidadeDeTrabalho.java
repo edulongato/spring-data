@@ -12,7 +12,7 @@ public class UnidadeDeTrabalho {
     private String descricao;
     private String endereco;
 
-    @ManyToMany(mappedBy = "unidadeTrabalhos", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "unidadeDeTrabalhos", fetch = FetchType.EAGER)
     private List<Funcionario> funcionarios;
 
 
