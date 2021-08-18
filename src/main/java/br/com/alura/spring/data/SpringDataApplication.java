@@ -38,11 +38,11 @@ public class SpringDataApplication implements CommandLineRunner {
         Scanner sc = new Scanner(System.in);
 
         while (system) {
-            System.out.println("Qual ação voçe quer executar?");
+            System.out.println("Qual acao deseja executar?");
             System.out.println("0 - Sair");
             System.out.println("1 - Cargo");
             System.out.println("2 - Funcionario");
-            System.out.println("1 - Unidade de Trabalho");
+            System.out.println("3 - Unidade de Trabalho");
 
             Integer function = sc.nextInt();
 
